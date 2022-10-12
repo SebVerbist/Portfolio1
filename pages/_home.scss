@@ -1,0 +1,168 @@
+// Specific CSS for your home-page
+@font-face {
+  font-family: "SourceSansPro-Bold";
+  src: font-url('fonts/SourceSansPro-Bold.ttf');
+}
+
+@font-face {
+  font-family: "SourceSansPro-Regular";
+  src: font-url('fonts/SourceSansPro-Regular.ttf');
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    font-family: 'SourceSansPro-Regular';
+  }
+
+
+.background_homepage {
+  background-image: url("https://res.cloudinary.com/dlr6yrpai/image/upload/v1663344397/Portfolio/Group_4_wbmoa0.png");
+  background-color: #ffffff;
+  height: 100vh;
+  min-height: 480px;
+}
+
+
+.content_intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin: 0 5vw 0 5vw;
+}
+
+
+.homepage_title {
+  margin: 0 auto 0 auto;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.homepage_title img{
+  -webkit-mask-image: -webkit-gradient(linear, left 90%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  mask-image: 'avoid synthax error';
+  max-height: 40vh;
+  }
+
+
+@media screen and (max-width: 767px) {
+  .homepage_title img{
+    max-width: 55%;
+  }
+}
+
+.homepage_title h1{
+  font-family: 'SourceSansPro-Bold';
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  margin: 1.5vh 0 1.5vh 0;
+}
+
+@media screen and (min-width: 601px) {
+  .homepage_title h1{
+    font-size: 45.36px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .homepage_title h1{
+    font-size: 30px;
+  }
+}
+
+.homepage_text {
+  width:  60%;
+  margin: 0 auto 2vh auto;
+  text-align: center;
+}
+
+.homepage_text p{
+  font-size: 20px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+
+@media screen and (min-width: 601px) {
+  .homepage_text p{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .homepage_text p{
+    font-size: 1rem;
+  }
+}
+
+.homepage_button {
+  margin: 2vh auto;
+  text-align: center;
+  padding: .7rem 2rem;
+  background-color: #EC886D;
+  border-radius: 5px;
+  border: #EC886D;
+  color: #ffffff;
+  font-size: 1.5rem;
+  box-shadow: 2.5px 5px 4px #888888;
+  text-decoration: none;
+}
+
+.homepage_button:hover {
+  background-color: #e86f4e;
+  color: #ffffff;
+}
+
+.logos_link {
+  position: fixed;
+  top: 40vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #CACACA;
+  border-radius: 0 .5vw .5vw 0;
+  text-align: center;
+  font-size: 3vw;
+}
+
+@media screen and (min-width: 1200px) {
+  .logos_link {
+    font-size: 31.258px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .logos_link {
+    font-size: 24.258px;
+  }
+}
+
+.logos_link a:hover{
+  background-color: #EC886D;
+  border-radius: 0 .5vw .5vw 0;
+}
+
+.logos_link i{
+  padding: 1vw;
+  color: black;
+}
+
+.logos_link i:hover{
+  color: #ffffff;
+}
+
+
+@media screen and (max-width: 500px) {
+  .logos_link {
+    display: none;
+  }
+}
+
+
+.homepage_text .strong{
+  font-family: 'SourceSansPro-Bold';
+}
