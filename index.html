@@ -8,34 +8,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sébastien Verbist - Portfolio</title>
   </head>
-  <nav class="navbar">
-    <div class="container-fluid">
-      <a class="navbar-brand" href=".">
-        <img src="https://res.cloudinary.com/dlr6yrpai/image/upload/v1664225479/Portfolio/SV_6_teune5.png" />
-        <p>SÉBASTIEN VERBIST</p>
-      </a>
-
-       <button class="navbar-toggler collapsed d-flex d-md-none flex-colomn justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
-        <span class="toggler-icon top-bar"></span>
-        <span class="toggler-icon middle-bar"></span>
-        <span class="toggler-icon bottom-bar"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item active"><a class="nav-link" href="./#home">HOME</a></li>
-            <li class="nav-item"><a class="nav-link" href="./#about-me">ABOUT ME</a></li>
-            <li class="nav-item"><a class="nav-link" href="./#projects">PROJECTS</a></li>
-            <li class="nav-item"><a class="nav-link" href="./#contact">CONTACT</a></li>
-          </ul>
-      </div>
-    </div>
-  </nav>
   <body>
     <div id="preloader">
       <div class="loader-container">
         <div class="loader1"></div>
         <div class="loader2"></div>
         <div class="loader3"></div>
+      </div>
+    </div>
+    <div class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href=".">
+          <img src="https://res.cloudinary.com/dlr6yrpai/image/upload/v1664225479/Portfolio/SV_6_teune5.png" />
+          <p>SÉBASTIEN VERBIST</p>
+        </a>
+
+         <button class="navbar-toggler collapsed d-flex d-md-none flex-colomn justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item active"><a class="nav-link" href="./#home">HOME</a></li>
+              <li class="nav-item"><a class="nav-link" href="./#about-me">ABOUT ME</a></li>
+              <li class="nav-item"><a class="nav-link" href="./#projects">PROJECTS</a></li>
+              <li class="nav-item"><a class="nav-link" href="./#contact">CONTACT</a></li>
+            </ul>
+        </div>
       </div>
     </div>
     <div id="home">
@@ -190,7 +192,7 @@
         </div>
       </div>
     </div>
-    <footer class="footer">
+    <div id="footer">
       <div class="name_and_socials row">
         <div class="footer_name col-sm-8">
           <h3>SÉBASTIEN VERBIST</h3>
@@ -206,7 +208,7 @@
       <div class="footer-copyright">
         This was made with <i class="fas fa-heart"></i> by <a href="#home">Sébastien Verbist</a>
       </div>
-  </footer>
+    </div>
 
 
     <script type="module" src="/main.js"></script>
@@ -215,7 +217,7 @@
 
       window.addEventListener("load", function() {
         loader.style.display = "none"
-      })
+        })
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
